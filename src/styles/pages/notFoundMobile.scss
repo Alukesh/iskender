@@ -1,0 +1,69 @@
+.mobile-notFound{
+    background: rgba(13, 96, 153, 1);
+    margin-top: -65px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size: 100px;
+        z-index: 1;
+    }
+    .text{
+        text-align: center;
+        flex-grow: unset;
+        font-size: 18px;
+        line-height: 21.6px;
+        height: fit-content;
+        z-index: 1;
+        position: relative;
+        width: 190px;
+    }
+    .circle{
+        position: absolute;
+    }
+    .ellipse1{
+        left: 30%;
+        top: 40%;
+        width: 190px;
+        height: 190px;
+    }
+    .ellipse2{
+        top: 10%;
+        left: 1%;
+        width: 90px;
+        height: 90px;
+    }
+    .ellipse3{
+        top: 12%;
+        right: 0%;
+        width: 120px;
+        height: 120px;
+        // clip-path: ellipse(67% 100% at 8% 50%);
+    }
+    .ellipse4{
+        top: 23%;
+        right: 45%;
+        width: 50px;
+        height: 50px;
+    }
+    .ellipse5{
+        bottom: 5%;
+        left: 10%;
+        width: 90px;
+        height: 90px;
+    }
+    .ellipse6{
+        bottom: 8%;
+        right: 17%;
+        width: 70px;
+        height: 70px;
+    }
+    .ellipse7{
+        bottom: 25%;
+        left: 10%;
+        width: 40px;
+        height: 40px;
+    }
+}

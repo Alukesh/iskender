@@ -1,0 +1,119 @@
+.bonus-curd {
+  margin-bottom: 30px;
+  display: none;
+  &-block {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 363px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    .ellipse1 {
+      position: absolute;
+      left: -23px;
+      top: -13px;
+      z-index: -1;
+      animation-name: bounce;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+    }
+    .ellipse2 {
+      bottom: 7px;
+      position: absolute;
+      left: 35%;
+      z-index: -1;
+      animation-name: bounce;
+      animation-iteration-count: infinite;
+      animation-duration: 10s;
+    }
+    .ellipse3 {
+      position: absolute;
+      top: -5px;
+      right: -34px;
+      z-index: -1;
+      animation-name: bounce;
+      animation-iteration-count: infinite;
+      animation-duration: 26s;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translate(0);
+      }
+
+      50% {
+        transform: translate(40px, -30px);
+        width: 80px;
+        height: 80px;
+        opacity: 0.3;
+      }
+
+      100% {
+        transform: translate(0);
+      }
+    }
+
+    &_side {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      line-height: normal;
+      &-top {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        h5 {
+          font-size: 1rem;
+        }
+      }
+      &-bonus {
+        margin-top: 16px;
+        p {
+          font-size: 15px;
+        }
+        strong {
+          font-size: 23px;
+        }
+      }
+      small {
+        font-size: 12px;
+        margin-top: 12px;
+      }
+
+      .logo {
+        margin-bottom: 19px;
+      }
+    }
+  }
+  &-block::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 1px);
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: var(
+      --gradien-2,
+      linear-gradient(
+        201deg,
+        rgba(118, 184, 230, 0.4) 13.17%,
+        rgba(119, 198, 254, 0.4) 50.35%,
+        rgba(166, 225, 255, 0.4) 84.09%
+      )
+    );
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bonus-curd {
+    display: block;
+  }
+}

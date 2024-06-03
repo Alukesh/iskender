@@ -1,0 +1,39 @@
+.map-container {
+  width: 100%;
+  padding: 0 0 50px 0;
+
+  .searc-titles {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    border-radius: 10px;
+    background: #fff;
+
+    input {
+      width: 100%;
+      outline: none;
+      border: none;
+      padding: 15px 0;
+
+      &::placeholder {
+        color: var(--grey-2, #727272);
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .all-branches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+  }
+}

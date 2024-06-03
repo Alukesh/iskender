@@ -1,0 +1,28 @@
+.custom-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  img,
+  p {
+    position: absolute;
+  }
+  input {
+    all: unset;
+    background: #fff;
+    padding: 12px 20px 12px 53px;
+    font-size: 13px;
+    width: 100%;
+    color: black;
+    border-radius: 10px;
+  }
+  img {
+    top: 12px;
+    left: 20px;
+  }
+  .custom-search_search-result {
+    right: 20px;
+    color: #ababab;
+    font-size: 13px;
+  }
+}

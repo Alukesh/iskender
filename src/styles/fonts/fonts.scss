@@ -1,0 +1,61 @@
+.Gilroy-b{
+    font-family: 'Gilroy';
+    font-weight: 700;
+    &.white{
+        color: white;
+    }
+    &.grey{
+        color: #e0e0e0;
+    }
+    &.black{
+        color: black;
+    }
+}
+
+.Gilroy-w{
+    font-family: 'Gilroy';
+    font-weight: 600;
+    &.white{
+        color: white;
+    }
+    &.grey{
+        color: #e0e0e0;
+    }
+    &.black{
+        color: black;
+    }
+}
+
+.Gilroy-m{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    &.white{
+        color: white;
+    }
+    &.grey{
+        color: #e0e0e0;
+    }
+    &.black{
+        color: black;
+    }
+}
+.Gilroy-n{
+    font-family: 'Gilroy';
+    font-weight: 400;
+    &.small{
+        font-size: 12px;
+        @media (max-width:450px) {
+            font-size: 10px;
+        }
+    }
+
+    &.white{
+        color: white;
+    }
+    &.grey{
+        color: #e0e0e0;
+    }
+    &.black{
+        color: black;
+    }
+}

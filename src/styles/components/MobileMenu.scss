@@ -1,0 +1,118 @@
+.mobile_menu {
+  color: #fff;
+  background: #0d6099;
+  position: fixed;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 20;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  overflow: hidden;
+  color: #e0e0e0;
+  font-size: 15px;
+  strong{
+    color: #fff;
+  }
+  @media (min-width: 781px) {
+    display: none;
+    height: 100%;
+  }
+  &.open {
+    transform: none;
+    position: fixed;
+    top: 0;
+  }
+  & .ellipce {
+    position: absolute;
+    animation-name: bounceInMenu;
+    animation-iteration-count: infinite;
+  }
+  .circle3 {
+    top: 33%;
+    left: 33%;
+    aspect-ratio: 1/1;
+    width: 220px;
+    height: 220px;
+    animation-duration: 16s;
+  }
+  .circle1 {
+    right: 0;
+    top: 10%;
+    animation-duration: 12s;
+  }
+  .circle2 {
+    left: -10%;
+    animation-duration: 10s;
+  }
+  .circle4 {
+    top: 20%;
+    left: 23%;
+    animation-duration: 46s;
+  }
+  &-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    border: 1px solid rgba(255, 255, 255, 0.93);
+
+    height:100%;
+    overflow-y: auto;
+    padding-top: 100px;
+  }
+  &-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 70px;
+  }
+  & nav {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  & li {
+    list-style: none;
+  }
+  &-link {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    &.active{
+      text-decoration: underline;
+    }
+  }
+  .footer-columns-column{
+    gap: 23px !important;
+  }
+  @keyframes bounceInMenu {
+    0% {
+      transform: translate(0);
+    }
+
+    50% {
+      transform: translate(40px, -30px);
+      width: 100px;
+      height: 100px;
+      opacity: 0.3;
+    }
+
+    100% {
+      transform: translate(0);
+    }
+  }
+}

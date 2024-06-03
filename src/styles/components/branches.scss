@@ -1,0 +1,99 @@
+.slick-list {
+    margin: 0 -10px;
+}
+.branches {
+    &-container {
+        margin-bottom: 75px;
+    }
+    &-item {
+        width: 100%;
+        max-width: 400px;
+        cursor: pointer;
+        height: 178px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: #fff;
+        gap: 15px;
+        text-decoration: none;
+        &_top {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-grow: 1;
+            position: relative;
+            padding-bottom: 13.5px;
+            &-right {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+        &_top::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: #e3e3e3;
+            bottom: 0;
+            left: 0;
+        }
+
+        &-info {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 21px;
+        }
+
+        &-nav {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-clock {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            & svg {
+                cursor: inherit;
+            }
+        }
+
+        h3 {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            color: #1F1F39;
+        }
+
+        span {
+            font-size: 14px;
+            color: #1F1F39;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        p {
+            color: #0062d5;
+            font-size: 12px;
+            // text-decoration-line: underline;
+            cursor: pointer;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .branches-item {
+        padding: 12px;
+    }
+}

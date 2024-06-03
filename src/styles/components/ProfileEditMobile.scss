@@ -1,0 +1,270 @@
+.profileEdit {
+  padding: 0 15px;
+  padding-bottom: 130px;
+  background: #F8F8F8;
+  position: relative;
+
+  &_modal {
+    position: fixed;
+    z-index: 13;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease-in-out;
+
+    &.active {
+      transition: opacity 0.15s ease-in-out;
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    &__window {
+      width: 362px;
+      position: fixed;
+      z-index: 15;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 14px;
+      background: rgba(232, 232, 232, 0.97);
+      overflow: hidden;
+      transition: all .3s;
+    }
+
+    &__dark {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: 14;
+      background: #1a1919;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+    }
+
+    &__button {
+      padding: 18px 20px;
+      border: none;
+      width: 100%;
+      border-bottom: 0.33px solid rgba(60, 60, 67, 0.36);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #007AFF;
+      font-size: 16px;
+      font-weight: 500;
+       
+
+      &.active {
+        background: rgba(252, 252, 252, 0.97);
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &.title {
+        font-size: 12px;
+        font-family: 'Gilroy-Regular';
+        color: #727272;
+      }
+
+      &.cancel {
+        color: #AEAEB2;
+      }
+    }
+  }
+
+  &_pfp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    &__image {
+      border-radius: 100%;
+      overflow: hidden;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    &__update {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all .2s;
+    }
+
+    &__update.active {
+      opacity: 1;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .input_high_block {
+    &.last {
+      margin-bottom: 50px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #727272;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .input {
+      width: 100%;
+      padding: 12.5px 14px;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      border: 1px solid #ddd;
+
+      color: #575757;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      &.error {
+        border: 1px solid red;
+      }
+
+      &.input_wrap__phone {
+        border: none;
+        padding: 0;
+        border-radius: 0;
+      }
+
+      &.input_wrap {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 7.5px 10px;
+      }
+    }
+    .buttons_block {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      .button_sex {
+        width: 100%;
+        max-width: 181px;
+        height: 35px;
+
+        border-radius: 10px;
+        background: #f8faff;
+        border: 1px solid #0063a9;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        cursor: pointer;
+
+        &.active {
+          background: #d7eefe;
+        }
+      }
+      .button_submit {
+        width: 100%;
+        max-width: 184px;
+        height: 46px;
+        outline: none;
+        border: none;
+
+        border-radius: 10px;
+        background: #0063a9;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        cursor: pointer;
+
+        &.undo {
+          color: #000000;
+          background: #d4d4d4;
+        }
+      }
+    }
+  }
+
+  .input_wrap__flex {
+    display: flex;
+    gap: 13.06px;
+    padding-right: 11.96px;
+    margin-right: 10px;
+    border-right: 1px solid #DDDDDD;
+  }
+
+  .input_wrap__flex > .icon {
+    cursor: pointer;
+  }
+
+  .input_block {
+    position: relative;
+  }
+
+  .input_block > .icon {
+    position: absolute;
+    top: 50%;
+    left: 12.25px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+  }
+
+  .input_block > .input {
+    padding-left: 44px;
+  }
+
+  .input_block > .input_date::-webkit-calendar-picker-indicator {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 12.25px;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .input_block > .input_date {
+    font-family: "Inter", sans-serif;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background: #cecece;
+  }
+}

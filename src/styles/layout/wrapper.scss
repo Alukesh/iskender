@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+// @media (max-width: 426px) {
+@media (max-width: 1000px) {
+  .container {
+    &.accountM {
+      margin: 0!important;
+      padding: 0!important;
+    }
+  }
+}

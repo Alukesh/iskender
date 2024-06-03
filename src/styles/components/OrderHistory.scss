@@ -1,0 +1,202 @@
+.orders_history {
+  width: 100%;
+
+  .gray_text {
+    color: var(--grey-2, #727272);
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .date_order {
+    margin: 30px 0;
+    .dates {
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      .datepicker input{
+        padding: 6px 10px;
+        border-radius: 10px;
+        border: 1px solid var(--light-grey, #ddd);
+        background: #fff;
+        gap: 15px;
+        margin: 10px 0 0px 0;
+        position: relative;
+        width: 140px;
+      }
+      .date {
+        padding: 6px 10px;
+        border-radius: 10px;
+        border: 1px solid var(--light-grey, #ddd);
+        background: #fff;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        cursor: pointer;
+        margin: 10px 0 50px 0;
+        position: relative;
+
+        > span {
+          color: var(--Greyscale-Black-100, #000);
+          font-size: 16px;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+    }
+    .orders {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 5px;
+
+      .order {
+        text-decoration: none;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        border-radius: 10px;
+        background: #fff;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .button_wrap {
+          width: 35%;
+          display: flex;
+          justify-content: flex-end;
+
+          > button {
+            border-radius: 100px;
+            padding: 5px 15px;
+            border: none;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+          }
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          width: 45%;
+
+          &__name {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 5px;
+
+            > p {
+              color: #000;
+              font-size: 16px;
+              font-weight: 500;
+              font-family: 'Gilroy-Medium', sans-serif;
+            }
+            > span {
+              color: var(--main-color, #0063a9);
+              font-size: 15px;
+              font-weight: 400;
+              font-family: 'Gilroy-Regular', sans-serif;
+            }
+          }
+          > svg {
+            min-width: 29px;
+            height: 29px;
+          }
+        }
+
+        > h3 {
+          color: #000;
+          font-size: 16px;
+          font-weight: 600;
+          width: 16%;
+        }
+
+        .first {
+          background: #6f4bff;
+        }
+        .second {
+          background: #0063a9;
+        }
+        .third {
+          background: #34a6f6;
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 426px) {
+@media (max-width: 1000px) {
+  .orders_history {
+    padding: 0 15px;
+    padding-bottom: 90px;
+  }
+
+  .orders_history > h1 {
+    display: none;
+  }
+
+  .dates {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .orders_history .date_order .orders {
+    gap: 15px;
+  }
+
+  .orders_history .date_order .orders .order {
+    padding: 0;
+    padding-bottom: 15px;
+    background: transparent;
+    border-bottom: 1px solid #DDDDDD;
+    border-radius: 0;
+    gap: 5px;
+  }
+
+  .orders_history .date_order .orders .order:last-child {
+    border-bottom: none;
+  }
+
+  .orders_history .date_order .orders .order .user > svg {
+    min-width: 29px;
+    height: 29px;
+  }
+
+  .orders_history .date_order .orders .order .user {
+    align-items: flex-start;
+    width: 65%;
+  }
+
+  .orders_history .date_order .orders .order > h3 {
+    width: 33%;
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .orders_history .date_order .orders .order .button_wrap {
+    padding-left: 42px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .user__name > p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+     
+  }
+
+  .user__name > span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #0063A9;
+    font-family: 'Gilroy-Regular';
+  }
+}

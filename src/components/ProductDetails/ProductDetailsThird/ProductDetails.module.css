@@ -1,0 +1,130 @@
+.third_c {
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.third_c .empty {
+  width: 233px;
+  color: #828282;
+  text-overflow: ellipsis;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.third_c > h2 {
+  color: var(--Greyscale-Black-100, #000);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+@media (max-width: 1150px) {
+  .third_c > h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1050px) {
+  .third_c > h2 {
+    font-size: 14px;
+  }
+}
+.third_c > p {
+  color: #797979;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 5px 0;
+}
+.third_c .complects {
+  max-height: 250px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.third_c .complects::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 5px;
+}
+.third_c .complects::-webkit-scrollbar-track {
+  background: #cdcdcd;
+}
+.third_c .complects ::-webkit-scrollbar-thumb {
+  color: #4186b6;
+}
+.third_c .complects .c_img {
+  width: 60px;
+  height: 60px;
+}
+.third_c .complects .complect {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px 15px;
+  gap: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.third_c .complects .complect:hover {
+  background: rgba(45, 130, 190, 0.13);
+}
+.third_c .complects .complect_unavailible {
+  color: #f21e1e;
+}
+.third_c .complects .complect .check {
+  width: 12px;
+  height: 12px;
+  background: #ededed;
+  border: 1px solid #ababab;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.third_c .complects .complect .check:hover {
+  background: #5d5d5d;
+  border: 1px solid #ababab;
+}
+.third_c .complects .complect .checked {
+  width: 12px;
+  height: 12px;
+  background: #5d5d5d;
+  border: 1px solid #ababab;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.third_c .complects .complect .title {
+  color: var(--Greyscale-Black-100, #000);
+  font-size: 13px;
+  font-weight: 500;
+  width: 60%;
+  margin-right: auto;
+}
+
+@media (max-width: 1240px) {
+  .third_c {
+    width: 40%;
+  }
+  .third_c > h2 {
+    font-size: 18px;
+  }
+  .third_c .complects {
+    max-height: 210px;
+  }
+}
+@media (max-width: 960px) {
+  .third_c {
+    width: 100%;
+  }
+  .third_c > p {
+    font-size: 14px;
+    margin: 14px 0 2px 0;
+  }
+}
+@media (max-width: 960px) {
+  .third_c {
+    width: fit-content;
+  }
+}
+
+/*# sourceMappingURL=ProductDetails.module.css.map */

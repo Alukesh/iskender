@@ -1,0 +1,6 @@
+<svg class="market-svg" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.19385 2.03711L2.24853 2.24805C2.97463 2.39327 3.52078 2.99558 3.59446 3.73238L3.74366 5.22437M3.74366 5.22437L4.65836 12.8469C4.75996 13.6936 5.47825 14.3308 6.33104 14.3308H14.8283C16.1811 14.3308 17.3603 13.4101 17.6884 12.0977L18.805 7.63164C19.1107 6.40887 18.1858 5.22437 16.9254 5.22437H3.74366Z" stroke="#fff" stroke-width="1.26351" stroke-linecap="round"/>
+<path d="M11.521 11.9199H7.1499" stroke="#fff" stroke-width="1.26351" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="7.1128" cy="17.5183" r="1.36597" fill="#fff"/>
+<circle cx="15.3084" cy="17.5183" r="1.36597" fill="#fff"/>
+</svg>

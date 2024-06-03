@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+
+
+.slick-slide {
+  margin-bottom: 25px;
+}
+
+.slick-dots {
+    display: flex;
+    margin: 0 !important;
+    margin-top: 18px !important;
+    padding: 0rem 1rem !important;
+    list-style-type: none;
+    @media (max-width: 480px) {
+      display: none !important;
+    }
+}
+.slick-dots li {
+    margin: 0px 20px !important;
+    width: 0;
+}
+
+.slick-dots li button::before {
+  width: 0;
+}
+.slick-dots button {
+    display: block !important;
+    padding: 0 !important;
+    border: none;    
+    width: 3px !important;
+    height: 3px !important;
+    border-radius: 58px;
+    text-indent: -9999px;
+    transition: all .1s;
+    background: #0063A9 !important;
+}
+
+li.slick-active button {
+    width: 33px !important;
+    /* margin: 0 -20px; */
+    margin-left: -15px !important; 
+}

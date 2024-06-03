@@ -1,0 +1,21 @@
+.news-and-promotions {
+  padding-bottom: 90px;
+  // padding: 0 15px;
+
+  @media (max-width: 1000px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (max-width: 426px) {
+    margin-top: 30px;
+  }
+  &__block-news {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .news-item {
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,98 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+  .table_heading {
+    display: grid;
+    grid-template-columns: 10% 50.5% 22.5% 24%;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Gilroy";
+    border-bottom: 1px solid #d2d2d2;
+    margin-bottom: 9px;
+  }
+
+  .table_item {
+    display: grid;
+    grid-template-columns: 10% 48.5% 23.5% 25%;
+    align-items: center;
+    padding: 8px 12px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 7px;
+    &__image {
+      width: 35px;
+      height: 35px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > * {
+        max-height: 100%;
+      }
+    }
+
+    &__name {
+      font-size: 13px;
+      font-weight: 500;
+      font-family: "Gilroy";
+      text-decoration: none;
+      color: black;
+      
+    }
+
+    &__quantity {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+
+      > .mathDiv {
+        width: 26px;
+        height: 26px;
+
+        > svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      > .mathDiv:hover > svg > rect {
+        fill: #004f86;
+      }
+
+      > .mathDiv:hover > svg > path {
+        fill: #fff;
+      }
+
+      > .mathDiv.added > svg > rect {
+        fill: #73cb5e;
+      }
+
+      > .mathDiv.added > svg > path {
+        fill: #fff;
+      }
+    }
+
+    > svg {
+      position: absolute;
+      top: 50%;
+      right: 18.5px;
+      transform: translateY(-50%);
+      fill: #ff0000;
+    }
+
+    &__price {
+      font-size: 15px;
+      font-weight: 700;
+      font-family: "Gilroy";
+    }
+  }
+
+  .table_item:last-child {
+    margin-bottom: 0;
+  }
+}

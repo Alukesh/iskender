@@ -1,0 +1,63 @@
+.burger {
+    display: none;
+    width: 100%;
+    background: linear-gradient(172.91deg, #0063a9 5.52%, #a5daff 30.07%);
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease;
+    border-radius: 0 0 50px 50px;
+    z-index: 10000;
+    -webkit-box-shadow: -2px 23px 24px -7px rgba(34, 60, 80, 0.41);
+    -moz-box-shadow: -2px 23px 24px -7px rgba(34, 60, 80, 0.41);
+    box-shadow: -2px 23px 24px -7px rgba(34, 60, 80, 0.41);
+    &-list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+
+        li {
+            margin: 0 0 25px 0;
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            &::before {
+                display: inline-block;
+                content: "";
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                padding: 0 10px 0 0;
+            }
+            &:first-child::before {
+                background: url("./HomeNav.svg") no-repeat;
+                background-size: contain;
+            }
+            &:nth-child(2):before {
+                background: url("../../components/icons/Notebook.svg") no-repeat;
+                background-size: contain;
+            }
+            &:nth-child(3):before {
+                background: url("../../components/icons/location1.svg")
+                    no-repeat;
+                background-size: contain;
+            }
+            &:nth-child(4):before {
+                background: url("../../components/icons/cart.svg") no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    .burger {
+        display: block;
+    }
+}
